@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Allied Linkshell App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+    <style type="text/css">
+        /*.mobmap {
+            margin-left: auto;
+            margin-right: auto;
+        }*/
+        .maps {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+<div data-role="page" id="home">
+    <div data-role="header" data-id="navbar" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home" class="ui-btn-active ui-state-persist">Home</a>
+                </li>
+                <li>
+                    <a href="#huntingLogs">Hunting Logs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <p>Welcome to Allied Linkshell's mobile app!</p>
+        <p>Additional features will be added in the future.</p>
+        <h2>The only hunting log currently available is Archer</h2>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <i>Copyright DevNeck &copy; 2013</i>
+    </div>
+
+</div>
+
+<div data-role="page" id="huntingLogs">
+    <div data-role="header" data-id="navbar" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#huntingLogs" class="ui-btn-active ui-state-persist">Hunting Logs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true" id="classes">
+            <li data-role="list-divider">Class Hunting Logs:</li>
+            <li>
+                <a href="#acn">Arcanist</a>
+            </li>
+            <li>
+                <a href="#arc">Archer</a>
+            </li>
+            <li>
+                <a href="#cnj">Conjurer</a>
+            </li>
+            <li>
+                <a href="#gld">Gladiator</a>
+            </li>
+            <li>
+                <a href="#lnc">Lancer</a>
+            </li>
+            <li>
+                <a href="#mrd">Marauder</a>
+            </li>
+            <li>
+                <a href="#pgl">Pugilist</a>
+            </li>
+            <li>
+                <a href="#thm">Thaumaturge</a>
+            </li>
+            <li data-role="list-divider">Grand Company Hunting Logs:</li>
+            <li>
+                <a href="#gc-mael">Maelstrom</a>
+            </li>
+            <li>
+                <a href="#gc-flames">Immortal Flames</a>
+            </li>
+            <li>
+                <a href="#gc-adders">Twin Adders</a>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <i>Copyright DevNeck &copy; 2013</i>
+    </div>
+
+</div>
+
+<div data-role="page" id="acn">
+    <div data-role="header" data-id="navbar" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#huntingLogs">Hunting Logs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <p>Arcanist</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <i>Copyright DevNeck &copy; 2013</i>
+    </div>
+
+</div>
+<div data-role="page" id="arc">
+    <div data-role="header" data-id="navbar" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#huntingLogs">Hunting Logs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+            <li data-role="list-divider">Archer:</li>
+            <li>
+                <a href="#" class="rank">Rank 1</a>
+                <ul data-role="listview" data-inset="true" data-filter="true">
+                    <li>
+                        <a class="backbtn">Back</a>
+                    </li>
+                    <li data-role="list-divider"></li>
+                    <li>
+                        <a href="#" class="showmap">Little Ladybug</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/LittleLadybug.png" alt="Little Ladybug" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Ground Squirrel</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/GroundSquirrel.png" alt="Ground Squirrel" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Forest Funguar</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/ForestFunguar.png" alt="Forest Funguar" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Miteling</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/Miteling.png" alt="Miteling" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Midge Swarm</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span>Map not available at this time.
+                            <!--<img src="http://allied.devneck.com/img/archer/MidgeSwarm.png" alt="Midge Swarm" class="maps"/>--></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Ixali Lostwing</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/IxaliLostwing.png" alt="Ixali Lostwing" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Ixali Slowbeak</a>
+                        <span class="ui-li-count">4</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/IxaliSlowbeak.png" alt="Ixali Slowbeak" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Opo-opo</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/OpoOpo.png" alt="Opo-opo" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Black Eft</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/BlackEft.png" alt="Black Eft" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Microchu</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/Microchu.png" alt="Microchu" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Hoglet</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/Hoglet.png" alt="Hoglet" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Syrphid Swarm</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/SyrphidSwarm.png" alt="Syrphid Swarm" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Trickster Imp</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/TricksterImp.png" alt="Trickster Imp" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Roselet</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/Roselet.png" alt="Roselet" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Qiqirn Scrambler</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/QiqirnScrambler.png" alt="Qiqirn Scrambler" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Diremite</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span>Map not available at this time.
+                            <!--<img src="http://allied.devneck.com/img/archer/Diremite.png" alt="Diremite" class="maps"/>--></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Tree Slug</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span>Map not available at this time.
+                            <!--<img src="http://allied.devneck.com/img/archer/TreeSlug.png" alt="Tree Slug" class="maps"/>--></span>
+                    </li>
+                    <li data-role="list-divider"></li>
+                    <li>
+                        <a class="backbtn">Back</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="rank">Rank 2</a>
+                <ul data-role="listview" data-inset="true" data-filter="true">
+                    <li>
+                        <a class="backbtn">Back</a>
+                    </li>
+                    <li data-role="list-divider"></li>
+                    <li>
+                        <a href="#" class="showmap">Arbor Buzzard</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/ArborBuzzard.png" alt="Arbor Buzzard" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Treant Sapling</a>
+                        <span class="ui-li-count">4</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/TreantSapling.png" alt="Treant Sapling" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Firefly</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/Firefly.png" alt="Firefly" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Magicked Bones</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/MagickedBones.png" alt="Magicked Bones" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Wild Hoglet</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/WildHoglet.png" alt="Wild Hoglet" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Boring Weevil</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/BoringWeevil.png" alt="Boring Weevil" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Lemur</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/Lemur.png" alt="Lemur" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Giant Gnat</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/GiantGnat.png" alt="Giant Gnat" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Fleshfly Swarm</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/FleshySwarm.png" alt="Fleshfly Swarm" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Void Soulcounter</a>
+                        <span class="ui-li-count">1</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/VoidSoulcounter.png" alt="Void Soulcounter" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Ziz Gorlin</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/ZizGorling.png" alt="Ziz Gorling" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Carrion Beetle</a>
+                        <span class="ui-li-count">3</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/CarrionBeetle.png" alt="CarrionBeetle" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Ak-Mena Varlet</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/AkMenaVarlet.png" alt="Ak-Mena Varlet" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Yarzon Feeder</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/YarzonFeeder.png" alt="Yarzon Feeder" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Octavel the Unforgiving</a>
+                        <span class="ui-li-count">1</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/OctaveTheUnforgiving.png" alt="Octavel the Unforgiving" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Raptor Poacher</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/RaptorPoacher.png" alt="Raptor Poacher" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Wolf Poacher</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/WolfPoacher.png" alt="Wolf Poacher" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Boar Poacher</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/BoarPoacher.png" alt="Boar Poacher" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Black Bat</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/BlackBat.png" alt="Black Bat" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Wind Sprite</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/WindSprite.png" alt="Wind Sprite" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Antelope Doe</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/AntelopeDoe.png" alt="Antelope Doe" class="maps"/></span>
+                    </li>
+                    <li data-role="list-divider"></li>
+                    <li>
+                        <a class="backbtn">Back</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="rank">Rank 3</a>
+                <ul data-role="listview" data-inset="true" data-filter="true">
+                    <li>
+                        <a class="backbtn">Back</a>
+                    </li>
+                    <li data-role="list-divider"></li>
+                    <li>
+                        <a href="#" class="showmap">Smallmouth Orobon</a>
+                        <span class="ui-li-count">8</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/SmallmouthOrobon.png" alt="Smallmouth Orobon" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Kedtrap</a>
+                        <span class="ui-li-count">8</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/Kedtrap.png" alt="Kedtrap" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Diseased Treant</a>
+                        <span class="ui-li-count">3</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/DiseasedTreant.png" alt="Diseased Treant" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Prison Pteroc</a>
+                        <span class="ui-li-count">4</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/PrisonPteroc.png" alt="Prison Pteroc" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Glowfly</a>
+                        <span class="ui-li-count">8</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/Glowfly.png" alt="Glowfly" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Tainted Louse</a>
+                        <span class="ui-li-count">7</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/TaintedLouse.png" alt="Tainted Louse" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Warden's Whip</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/WardensWhip.png" alt="Warden's Whip" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Mitetrap</a>
+                        <span class="ui-li-count">3</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/Mitetrap.png" alt="Mitetrap" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Bark Eft</a>
+                        <span class="ui-li-count">8</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/BarkEft.png" alt="Bark Eft" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">River Yarzon</a>
+                        <span class="ui-li-count">8</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/RiverYarzon.png" alt="River Yarzon" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Antelope Stag</a>
+                        <span class="ui-li-count">8</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/AntelopeStag.png" alt="Antelope Stag" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Manor Servitor</a>
+                        <span class="ui-li-count">7</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/ManorServitor.png" alt="Manor Servitor" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Divan Mold</a>
+                        <span class="ui-li-count">6</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/DivanMold.png" alt="Divan Mold" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Manor Maidservant</a>
+                        <span class="ui-li-count">9</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/ManorMaidservant.png" alt="Manor Maidservant" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Manor Claviger</a>
+                        <span class="ui-li-count">1</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/ManorClavinger.png" alt="Manor Claviger" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Servitor's Lantern</a>
+                        <span class="ui-li-count">4</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/ServitorsLantern.png" alt="Servitor's Lantern" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Lady Amandine</a>
+                        <span class="ui-li-count">1</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/LadyAmandine.png" alt="Lady Amandine" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Brood Ziz</a>
+                        <span class="ui-li-count">9</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/BroodZiz.png" alt="Brood Ziz" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Midland Condor</a>
+                        <span class="ui-li-count">9</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/MidlandCondor.png" alt="Midland Condor" class="maps"/></span>
+                    </li>
+                    <li data-role="list-divider"></li>
+                    <li>
+                        <a class="backbtn">Back</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="rank">Rank 4</a>
+                <ul data-role="listview" data-inset="true" data-filter="true">
+                    <li>
+                        <a class="backbtn">Back</a>
+                    </li>
+                    <li data-role="list-divider"></li>
+                    <li>
+                        <a href="#" class="showmap">Stroper</a>
+                        <span class="ui-li-count">9</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/Stroper.png" alt="Stroper" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Lindwurm</a>
+                        <span class="ui-li-count">9</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/Lindwurm.png" alt="Lindwurm" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Floating Eye</a>
+                        <span class="ui-li-count">9</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/FloatingEye.png" alt="Floating Eye" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Bigmouth Orobon</a>
+                        <span class="ui-li-count">9</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/BigmouthOrobon.png" alt="Bigmouth Orobon" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Revenant</a>
+                        <span class="ui-li-count">9</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/Revenant.png" alt="Revenant" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Gully Galago</a>
+                        <span class="ui-li-count">2</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/GullyGalapago.png" alt="Gully Galago" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Ravelled Raincatcher</a>
+                        <span class="ui-li-count">1</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/RavelledRaincatcher.png" alt="Ravelled Raincatcher" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Death Gaze</a>
+                        <span class="ui-li-count">9</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/DeathGaze.png" alt="Death Gaze" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Comet Chaser</a>
+                        <span class="ui-li-count">5</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/CometChaser.png" alt="Comet Chaser" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Mud Biast</a>
+                        <span class="ui-li-count">3</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/MudBiast.png" alt="Mud Biast" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Spriggan</a>
+                        <span class="ui-li-count">9</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/Spriggan.png" alt="Spriggan" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Tempest Biast</a>
+                        <span class="ui-li-count">1</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/TempestBiast.png" alt="Tempest Biast" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Spriggan Collector</a>
+                        <span class="ui-li-count">3</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/SprigganCollector.png" alt="Spriggan Collector" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Smoke Bomb</a>
+                        <span class="ui-li-count">3</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/SmokeBomb.png" alt="Smoke Bomb" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Deepvoid Deathmouse</a>
+                        <span class="ui-li-count">9</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/DeepvoidDeathmouse.png" alt="Deepvoid Deathmouse" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Lesser Kalong</a>
+                        <span class="ui-li-count">9</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/LesserKalong.png" alt="Lesser Kalong" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Treant</a>
+                        <span class="ui-li-count">4</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/Treant.png" alt="Treant" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Will-o'-the-wisp</a>
+                        <span class="ui-li-count">9</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/WillOTheWisp.png" alt="Will-o'-the-wisp" class="maps"/></span>
+                    </li>
+                    <li>
+                        <a href="#" class="showmap">Giant Pelican</a>
+                        <span class="ui-li-count">10</span>
+                    </li>
+                    <li class="mobmap">
+                        <span><img src="http://allied.devneck.com/img/archer/GiantPelican.png" alt="Giant Pelican" class="maps"/></span>
+                    </li>
+                    <li data-role="list-divider"></li>
+                    <li>
+                        <a class="backbtn">Back</a>
+                    </li>
+                </ul>
+            </li>
+            <li data-role="list-divider"></li>
+            <li>
+                <a class="backbtn">Back</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <i>Copyright DevNeck &copy; 2013</i>
+    </div>
+
+</div>
+<div data-role="page" id="cnj">
+    <div data-role="header" data-id="navbar" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#huntingLogs">Hunting Logs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <p>Conjurer</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <i>Copyright DevNeck &copy; 2013</i>
+    </div>
+
+</div>
+<div data-role="page" id="gld">
+    <div data-role="header" data-id="navbar" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#huntingLogs">Hunting Logs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <p>Gladiator</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <i>Copyright DevNeck &copy; 2013</i>
+    </div>
+
+</div>
+<div data-role="page" id="lnc">
+    <div data-role="header" data-id="navbar" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#huntingLogs">Hunting Logs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <p>Lancer</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <i>Copyright DevNeck &copy; 2013</i>
+    </div>
+
+</div>
+<div data-role="page" id="mrd">
+    <div data-role="header" data-id="navbar" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#huntingLogs">Hunting Logs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <p>Marauder</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <i>Copyright DevNeck &copy; 2013</i>
+    </div>
+
+</div>
+<div data-role="page" id="pgl">
+    <div data-role="header" data-id="navbar" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#huntingLogs">Hunting Logs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <p>Pugilist</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <i>Copyright DevNeck &copy; 2013</i>
+    </div>
+
+</div>
+<div data-role="page" id="thm">
+    <div data-role="header" data-id="navbar" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#huntingLogs">Hunting Logs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <p>Thaumaturge</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <i>Copyright DevNeck &copy; 2013</i>
+    </div>
+
+</div>
+<div data-role="page" id="gc-mael">
+    <div data-role="header" data-id="navbar" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#huntingLogs">Hunting Logs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <p>Maelstrom</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <i>Copyright DevNeck &copy; 2013</i>
+    </div>
+
+</div>
+<div data-role="page" id="gc-flames">
+    <div data-role="header" data-id="navbar" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#huntingLogs">Hunting Logs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <p>Immortal Flames</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <i>Copyright DevNeck &copy; 2013</i>
+    </div>
+
+</div>
+<div data-role="page" id="gc-adders">
+    <div data-role="header" data-id="navbar" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#huntingLogs">Hunting Logs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <p>Twin Adders</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <i>Copyright DevNeck &copy; 2013</i>
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.mobmap').hide();
+
+        $(".backbtn").click(function(){
+            parent.history.back();
+            return false;
+        })
+
+        $('.showmap').on("click", function(evt) {
+            $(this).closest('li').next().toggle();
+            evt.preventDefault();
+        })
+    })
+</script>
+
+</body>
+</html>
